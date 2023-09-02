@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link type="text/css" rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
+        <style type="text/css" rel="stylesheet">
+            table{
+                border-collapse: collapse;
+            }
+            tr, td, th{
+                border:1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <h1>Teste</h1>
+            <h2>Teste</h2>
+            <h3>Teste</h3>
+            <h4>Teste</h4>
+            <h5>Teste</h5>
+            <h6>Teste</h6>
+            <nav id="menu-principal"></nav>  
+            <!-- nav serve para indicar area de navegação -->
+                <ul>
+                    <li><a href="">Item 1</a></li>
+                    <li>Item 2
+                        <ul class="submenu">
+                            <li><a href="">Item 2.1</a></li>
+                            <li><a href="">Item 2.2</a></li>
+                        </ul>
+                    </li>
+                    <li>Item 3
+                        <ul class="submenu">
+                            <li><a href="">Item 3.1</a></li>
+                            <li><a href="">Item 3.2</a></li>
+                            <li><a href="">Item 3.3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Item 4</a></li>
+                </ul>
+
+            <p>Lorem ipsum <a href="http://roalnte.ifrs.edu.br">dolor sit amet</a>, consectetur adipiscing elit. Aenean semper velit tellus, ornare semper sapien condimentum at. Donec lorem mi, fringilla nec lectus in, dictum maximus nisl. Pellentesque non justo in tortor viverra auctor. Vestibulum at luctus eros, quis pretium mauris. Fusce porta lorem eu odio efficitur, nec tincidunt mauris tempus. Integer dictum turpis felis, nec sodales ante fermentum id. Donec finibus est ut efficitur ultrices. Praesent id suscipit diam, sed mollis mauris. Quisque pharetra leo a dolor interdum, eu aliquam ipsum congue. Mauris pellentesque, lectus et sagittis ullamcorper, diam ligula commodo turpis, vitae gravida nibh dui eget lorem. Nulla sit amet consequat urna. Sed viverra elit ut neque porta, ac ornare sem tempus.</p>
+
+            <p>Proin vitae justo vitae orci rhoncus egestas. Suspendisse ipsum ipsum, dapibus non magna vel, euismod hendrerit magna. Vestibulum porttitor mattis rhoncus. Sed quis est elementum, ornare augue ac, mollis risus. Etiam suscipit felis non pharetra tristique. In et mollis arcu. In venenatis efficitur tellus quis eleifend. Aliquam sed justo a lectus porttitor tristique. Ut ut posuere purus. Donec consequat sapien vitae ultricies interdum. Ut mauris lectus, feugiat a libero quis, tincidunt semper mi. Nulla convallis vel nisl sit amet tincidunt. Maecenas tincidunt, nulla eget viverra auctor, eros erat luctus lectus, ac dignissim velit urna non risus. Praesent est ante, ultricies nec elit at, convallis lacinia dui. In nec lectus lacus.</p>
+
+            <p>Cras varius est quis sem accumsan rutrum. Vestibulum sit amet ligula tortor. Aenean nisl leo, vehicula nec condimentum a, tristique vel ligula. Morbi a nisi non tortor interdum vehicula. In molestie eget lorem et volutpat. Proin placerat sed neque a venenatis. Donec accumsan eget purus et facilisis. In lectus libero, tincidunt sed orci non, condimentum consequat dolor. Maecenas accumsan, felis sed accumsan volutpat, quam mi sodales dui, id ornare tortor metus id enim. Praesent quis nibh iaculis, accumsan tellus non, ornare mi. Duis vel consequat purus.</p>
+
+            <p>Nulla  <strong>ultricies</strong> nulla, pellentesque sollicitudin ex posuere sit amet. Morbi quis eros a risus dictum scelerisque. Nam sit amet imperdiet quam. Nulla elementum nec metus pulvinar tincidunt. Donec porta sapien ullamcorper, auctor purus at, sagittis quam. Duis consectetur, tortor vel euismod rhoncus, odio metus tincidunt risus, <em>eleifend purus</em>  tortor quis metus. Vivamus et accumsan justo.</p>
+
+            <p>Sed vitae hendrerit eros, a consequat odio. Nullam sagittis leo urna. Nullam in fermentum eros. Maecenas commodo, lectus at tincidunt vulputate, tortor erat egestas eros, a bibendum mauris mi vel dolor. Integer dapibus tellus nec arcu luctus, ut euismod est tincidunt. Donec sagittis scelerisque ipsum, bibendum dapibus arcu blandit sit amet. Curabitur hendrerit sodales urna, viverra pellentesque leo porttitor non. Donec sem nunc, dignissim ut turpis sit amet, ultrices gravida justo. Cras quis libero sed lacus fermentum lacinia vitae sit amet magna. Maecenas fringilla nibh felis, vitae convallis neque tincidunt quis. Donec tincidunt tellus nisl, et dignissim enim tincidunt ac. Morbi cursus est dui, vitae euismod nulla viverra sit amet. Cras sagittis leo sit amet purus dignissim, a aliquam urna blandit. Nunc vehicula sit amet diam et pulvinar. Integer interdum sem ac libero vulputate, sed pretium libero rhoncus. </p>
+            <a href="http://www.w3.org" target="_blank"><img src="ifrs.png"  alt="Logo IFRS"></a>
+            <ul>
+                <li>Item</li>
+                <li>Item</li>
+                <li>Item</li>
+                <li>Item</li>
+                <li>Item</li>
+            </ul>
+            <ol>
+                <li>Item</li>
+                <li>Item</li>
+                <li>Item</li>
+                <li>Item</li>
+                <li>Item</li>
+            </ol>
+            <table>
+                <caption>Arrecadação de IPTU entre 2021 e 2023</caption>
+                <thead> 
+                    <tr><th>Cidade</th><th>2021</th><th>2022</th><th>2023</th></tr>
+                </thead>
+                <tbody> 
+                    <tr><td>Rolante</td><td>12.385.951,71</td><td>14.064.446,94</td><td>11.383.481,10</td></tr>
+                    <tr><td>Taquara</td><td>12312312313</td><td>123123123</td><td>123123131231</td></tr>
+                    <tr><td>Parobé</td><td>12312312312</td><td>1231231231</td><td>123123123131</td></tr>
+                </tbody>
+            </table>
+            <form action="script.php" method="post"><!--method: get ou post-->
+                <label for="nome">Nome: </label>
+                <input type="text" name="nome" id="nome" placeholder="por ex: Maria, José...">
+
+                <input type="checkbox" id="atualizacoes" name="atualizacoes" value="" checked><label for="atualizacoes">Desejo receber atualizacoes</label> 
+
+                <input type="reset" name="enviar" value="Enviar">
+                <input type="reset">
+                <input type="button" value="Botao qualquer">
+            </form>
+    </div>
+    </body> 
+</html>
