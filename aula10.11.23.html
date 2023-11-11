@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="aula1011.js"></script>
+</head>
+<body>
+    <form id="dados-veiculos"></form>
+        <label for="modelo">Modelo</label>
+        <input type="" id="modelo">
+        <label for="marca">Marca</label>
+        <select id="marca">
+            <option>Chevrolet</option>
+            <option>Fiat</option>
+            <option>Ford</option>
+            <option>VolksWagen</option>
+        </select>
+        <label for="ano">Ano</label>
+        <input type="number" id="ano">
+        <label for="preco">Preço</label>
+        <input type="text" id="preco">
+        <input type="button" id="salvar" value="Salvar">
+        <input type="button" id="excluir-tudo" value="Excluir Tudo">
+    <table id="relatorio-veiculos">
+        <thead>
+            <tr><th>Modelo</th><th>Marca</th><th>Ano</th><th>Preço</th></tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</body>
+</html>
