@@ -1,29 +1,18 @@
-#container {
-        background-color: rgba(255, 251, 251, 0.493);
-        width: 90%;
-        margin: 0 auto;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 12px;
-    }
+/* Estilos para o layout dos campos */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px; /* Ajuste a largura conforme necessário */
+    margin: auto; /* Centraliza o formulário na página */
+}
 
-    h1{
-        font-size: 2em;
-        
-    }
+/* Estilos para as divs que contêm os rótulos e campos */
+form div {
+    margin-bottom: 15px; /* Espaçamento entre os campos */
+}
 
-    .produto{
-        border: solid 1px #b30505;
-        color: pink;
-    }
-
-    .preco-produto{
-        color:green;
-    }
-
-    #especial{
-        color: #b30505;
-    }
-
-    li{
-        color: yellow;
-    }
+/* Estilos para os rótulos dos campos */
+label {
+    display: block; /* Faz com que cada rótulo apareça em uma linha separada */
+    margin-bottom: 5px; /* Espaço entre os rótulos e os campos */
+}
