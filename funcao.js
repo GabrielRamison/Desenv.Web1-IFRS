@@ -1,22 +1,28 @@
 function saveProduct() {
     var productName = document.getElementById('productName').value;
-    var productImage = document.getElementById('productImage').value; // Aqui você pegaria o caminho do arquivo, mas não é possível obter diretamente por questões de segurança.
     var productPrice = document.getElementById('productPrice').value;
     var productCategory = document.getElementById('productCategory').value;
+    var productImage = document.getElementById('productImage').files[0]; // Captura o arquivo de imagem
 
-    // Simulando armazenamento temporário dos dados usando localStorage
-    var productData = {
-        name: productName,
-        // Aqui você pode armazenar outros dados do produto, mas não é recomendado armazenar a imagem diretamente no local storage.
-        price: productPrice,
-        category: productCategory
-    };
+    // Criando um novo elemento div para exibir as informações do produto atual
+    var newProductInfo = document.createElement('div');
+    newProductInfo.classList.add('product-info');
 
-    // Armazenando os dados no localStorage
-    var products = JSON.parse(localStorage.getItem('products')) || [];
-    products.push(productData);
-    localStorage.setItem('products', JSON.stringify(products));
+    // Adicionando as informações do produto ao novo elemento div
+    newProductInfo.innerHTML = `
+        <p>Nome: ${productName}</p>
+        <p>Preço: ${productPrice}</p>
+        <p>Categoria: ${productCategory}</p>
+        <p>Imagem:</p>
+        <img src="${URL.createObjectURL(productImage)}" alt="Imagem do produto" class="product-img">
+    `;
 
-    // Você pode adicionar um alert ou outra ação para indicar que o produto foi salvo temporariamente
-    alert('Produto salvo temporariamente!');
+    // Adicionando o novo elemento div ao final da div displayInfo
+    var displayInfo = document.getElementById('displayInfo');
+    displayInfo.appendChild(newProductInfo);
+
+    // Limpando apenas os campos do formulário que recebem entrada do usuário
+    document.getElementById('productName').value = '';
+    document.getElementById('productPrice').value = '';
+    document.getElementById('productImage').value = ''; // Limpa a seleção do arquivo
 }
