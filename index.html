@@ -4,35 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css"> <!-- Importando o arquivo CSS -->
-    <script src="funcao.js" defer></script>
+    <link rel="stylesheet" href="estilo.css"> 
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <form id="productForm">
-        <div class="product-form-item">
-            <label for="productName">Nome do Produto:</label>
-            <input type="text" id="productName" name="productName" required>
+    <form id="formularioProdutos">
+        <div class="item-formulario">
+            <label for="nomeProduto">Nome do Produto:</label>
+            <input type="text" id="nomeProduto" name="nomeProduto" required>
         </div>
-        <div class="product-form-item">
-            <label for="productImage">Imagem do Produto:</label>
-            <input type="file" id="productImage" name="productImage" accept="image/*" required>
+        <div class="item-formulario">
+            <label for="imagemProduto">Imagem do Produto:</label>
+            <input type="file" id="imagemProduto" name="imagemProduto" accept="image/*" required>
         </div>
-        <div class="product-form-item">
-            <label for="productPrice">Preço:</label>
-            <input type="number" id="productPrice" name="productPrice" step="0.01" required>
+        <div class="item-formulario">
+            <label for="precoProduto">Preço:</label>
+            <input type="number" id="precoProduto" name="precoProduto" step="0.01" required>
         </div>
-        <div class="product-form-item">
-            <label for="productCategory">Categoria:</label>
-            <select id="productCategory" name="productCategory" required>
-                <option value="eletronics">Eletrônicos</option>
-                <option value="clothing">Roupas</option>
-                <!-- Adicione outras opções de categoria conforme necessário -->
+        <div class="item-formulario">
+            <label for="categoriaProduto">Categoria:</label>
+            <select id="categoriaProduto" name="categoriaProduto" required>
+                <option value="eletronicos">Eletrônicos</option>
+                <option value="vestuario">Vestuário</option>
+                <option value="esporte">Esporte</option>
+                <option value="escritorio">Escritório</option>
+                
             </select>
         </div>
-        <button type="button" onclick="saveProduct()">Salvar</button>
+        <button type="button" onclick="salvarProduto()">Salvar</button>
     </form>
-    <!-- Div para exibir os dados temporariamente -->
-    <div id="displayInfo" class="product-details"  class="products-container"></div>
+    
+    <div id="exibirProdutos" class="container-produtos"></div>
 </body>
 </html>
 
