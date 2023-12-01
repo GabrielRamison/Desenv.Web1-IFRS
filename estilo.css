@@ -1,38 +1,26 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css"> <!-- Importando o arquivo CSS -->
-    <script src="funcao.js" defer></script>
-</head>
-<body>
-    <form id="productForm">
-        <div class="product-form-item">
-            <label for="productName">Nome do Produto:</label>
-            <input type="text" id="productName" name="productName" required>
-        </div>
-        <div class="product-form-item">
-            <label for="productImage">Imagem do Produto:</label>
-            <input type="file" id="productImage" name="productImage" accept="image/*" required>
-        </div>
-        <div class="product-form-item">
-            <label for="productPrice">Preço:</label>
-            <input type="number" id="productPrice" name="productPrice" step="0.01" required>
-        </div>
-        <div class="product-form-item">
-            <label for="productCategory">Categoria:</label>
-            <select id="productCategory" name="productCategory" required>
-                <option value="eletronics">Eletrônicos</option>
-                <option value="clothing">Roupas</option>
-                <!-- Adicione outras opções de categoria conforme necessário -->
-            </select>
-        </div>
-        <button type="button" onclick="saveProduct()">Salvar</button>
-    </form>
-    <!-- Div para exibir os dados temporariamente -->
-    <div id="displayInfo" class="product-details"  class="products-container"></div>
-</body>
-</html>
+/* Estilos para a div que contém os produtos */
+.container-produtos {
+    display: flex;
+    flex-wrap: nowrap; /* Impede a quebra de linha */
+    overflow-x: auto; /* Adiciona uma barra de rolagem horizontal se os produtos não couberem na tela */
+    gap: 10px; /* Espaço entre os produtos */
+    padding-bottom: 10px; /* Espaçamento inferior para melhor visualização */
+}
 
+/* Estilo para cada bloco de informações do produto */
+.info-produto {
+    border: 1px solid #ccc;
+    padding: 10px;
+    max-width: 250px; /* Define a largura máxima para os produtos */
+    flex: 0 0 auto; /* Torna o tamanho flexível para ajustar os produtos */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Estilos para a imagem do produto */
+.imagem-produto {
+    max-width: 100px;
+    max-height: 100px;
+    margin-bottom: 10px; /* Espaço abaixo da imagem */
