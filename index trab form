@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css"> 
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <form id="formularioProdutos">
+        <div class="item-formulario">
+            <label for="nomeProduto">Nome do Produto:</label>
+            <input type="text" id="nomeProduto" name="nomeProduto" required>
+        </div>
+        <div class="item-formulario">
+            <label for="imagemProduto">Imagem do Produto:</label>
+            <input type="file" id="imagemProduto" name="imagemProduto" accept="image/*" required>
+        </div>
+        <div class="item-formulario">
+            <label for="precoProduto">Preço:</label>
+            <input type="number" id="precoProduto" name="precoProduto" step="0.01" required>
+        </div>
+        <div class="item-formulario">
+            <label for="categoriaProduto">Categoria:</label>
+            <select id="categoriaProduto" name="categoriaProduto" required>
+                <option value="eletronicos">Eletrônicos</option>
+                <option value="vestuario">Vestuário</option>
+                <option value="esporte">Esporte</option>
+                <option value="escritorio">Escritório</option>
+                
+            </select>
+        </div>
+        <button type="button" onclick="salvarProduto()">Salvar</button>
+    </form>
+
+    <div class="filtro-categoria">
+        <label for="selecionarCategoria">Filtrar por Categoria:</label>
+        <select id="selecionarCategoria" onchange="filtrarPorCategoria()">
+            <option value="todos">Todos</option>
+            <option value="eletronicos">Eletrônicos</option>
+            <option value="vestuario">Vestuário</option>
+            <option value="esporte">Esporte</option>
+            <option value="escritorio">Escritório</option>
+            <!-- Adicione outras opções de categoria conforme necessário -->
+        </select>
+    </div>
