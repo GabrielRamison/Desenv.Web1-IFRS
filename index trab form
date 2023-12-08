@@ -45,3 +45,8 @@
             <!-- Adicione outras opções de categoria conforme necessário -->
         </select>
     </div>
+<button type="button" onclick="salvarProduto()"> Salvar</button>
+</form>
+<div id="exibirProdutos" class="container-produtos"></div>
+</body>
+</html>
