@@ -1,1 +1,43 @@
+function salvarProduto() {
+    var nomeProduto = document.getElementById('nomeProduto').value;
+    var precoProduto = document.getElementById('precoProduto').value;
+    var categoriaProduto = document.getElementById('categoriaProduto').value;
+    var imagemProduto = document.getElementById('imagemProduto').files[0]; // Captura o arquivo de imagem
 
+   
+    var novoProduto = document.createElement('div');
+    novoProduto.classList.add('info-produto');
+
+    
+    novoProduto.innerHTML = `
+        <p>Nome: ${nomeProduto}</p>
+        <p>Preço: ${precoProduto}</p>
+        <p>Categoria: ${categoriaProduto}</p>
+        <p>Imagem:</p>
+        <img src="${URL.createObjectURL(imagemProduto)}" alt="Imagem do produto" class="imagem-produto">
+    `;
+
+    
+    var exibirProdutos = document.getElementById('exibirProdutos');
+    exibirProdutos.appendChild(novoProduto);
+
+   
+    document.getElementById('nomeProduto').value = '';
+    document.getElementById('precoProduto').value = '';
+    document.getElementById('imagemProduto').value = ''; 
+
+     }
+
+    function filtrarPorCategoria() {
+        var categoriaSelecionada = document.getElementById('selecionarCategoria').value;
+        var produtos = document.querySelectorAll('.info-produto');
+    
+        produtos.forEach(function(produto) {
+            if (categoriaSelecionada === 'todos' || produto.innerHTML.includes(`Categoria: ${categoriaSelecionada}`)) {
+                produto.style.display = 'block'; // Exibe produtos da categoria selecionada
+            } else {
+                produto.style.display = 'none'; // Esconde produtos de outras categorias
+            }
+        });
+
+}
