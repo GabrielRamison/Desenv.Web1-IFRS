@@ -1,0 +1,26 @@
+.container-produtos {
+    display: flex;
+    flex-wrap: nowrap; 
+    overflow-x: auto; 
+    gap: 10px; 
+    padding-bottom: 10px; 
+}
+
+
+.info-produto {
+    border: 1px solid #ccc;
+    padding: 10px;
+    max-width: 250px; 
+    flex: 0 0 auto; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+.imagem-produto {
+    max-width: 100px;
+    max-height: 100px;
+    margin-bottom: 10px; 
+}
